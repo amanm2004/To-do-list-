@@ -5,7 +5,18 @@
   "description": "A simple to-do list",
   "permissions": ["storage"],
   "action": {
-    "default_popup": "popup.html"
-  
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/public/icon.png",
+      "32": "/public/icon.png",
+      "48": "/public/icon.png",
+      "128": "/public/icon.png"
+    }
+  },
+  "icons": {
+    "16": "/public/icon.png",
+    "32": "/public/icon.png",
+    "48": "/public/icon.png",
+    "128": "/public/icon.png"
   }
 }
