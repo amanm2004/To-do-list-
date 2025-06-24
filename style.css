@@ -1,31 +1,81 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    width: 250px;
-    color: black;
-    padding: 10px;
-    background-image: url(cat.jpg);
-    background-size: cover;
-    text-transform: capitalize;
-    font-weight: bold;
+  @apply font-['Press_Start_2P'];
+  background: url("./public/cat.jpeg") center/cover no-repeat, #c0c0c0;
+  color: #000;
+  width: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur132.cur"), auto;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  border: 3px solid #000;
+  outline: 5px double #fff;
 }
-input{
-    width: 70%;
-    padding: 5px;
-    
+.input-container {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 1rem;
 }
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  box-shadow: inset 2px 2px 0 #aaa;
+}
+
 button {
-    padding:5px;
+  padding: 10px 12px;
+  margin-left: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  transition: all 0.2s ease;
 }
+
+button:hover {
+  background-color: #ff69b4;
+  color: #000;
+  border-color: #000;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+
 li {
-    font-size: medium;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 0;
+  font-size: 12px;
+  font-family: "Press Start 2P", monospace;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  margin-bottom: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: inset 2px 2px 0 #aaa;
 }
+
 .completed {
-    text-decoration: line-through;
-    color:gray;
+  text-decoration: line-through;
+  color: #9c9c9c;
 }
